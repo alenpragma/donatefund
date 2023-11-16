@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Left Section - Logo and Information */}
           <div className="mb-4 md:mb-0 flex items-center">
             <img
-              src="https://i.postimg.cc/nLmcVvYf/Group-4.png"
+              src="https://i.postimg.cc/kXPKcppm/Danate-Fund.png"
               className="w-[100px] h-auto md:w-[200px] mr-4"
               alt="Logo"
             />

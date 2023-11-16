@@ -37,7 +37,7 @@ const NavAndBanner = () => {
             <div className="flex items-center gap-x-5">
               <div className="">
                 {/* Your logo component goes here */}
-                <img src="https://i.postimg.cc/nLmcVvYf/Group-4.png" className="w-[100px] h-auto md:w-[200px]" alt="Logo" />
+                <img src="https://i.postimg.cc/kXPKcppm/Danate-Fund.png" className="w-[100px] h-auto md:w-[200px]" alt="Logo" />
               </div>
 
               {/* Loop through demoArray to create nav items */}
