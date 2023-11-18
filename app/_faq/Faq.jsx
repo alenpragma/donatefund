@@ -5,37 +5,57 @@ import HeadingSubheading from "../_components/_headingSubHeading/HeadingSubheadi
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 const faqData = [
   {
-    question: "How can I make a donation?",
+    question: "What is DonateFund?",
     answer:
-      'You can make a donation by visiting our website and clicking on the "Donate" button.',
+      "DonateFund is a dedicated platform committed to creating a positive footprint by delivering essential services to those in need. We focus on providing critical resources and aid to underprivileged individuals facing diverse challenges.",
   },
   {
-    question: "How can I make a donation?",
+    question: "How can I contribute to DonateFund's mission?",
     answer:
-      'You can make a donation by visiting our website and clicking on the "Donate" button.',
+      "You can contribute to DonateFund's mission by making a donation through our secure online platform. Your support enables us to reach and assist more individuals in need.",
   },
   {
-    question: "How can I make a donation?",
+    question: "Where does my donation go?",
     answer:
-      'You can make a donation by visiting our website and clicking on the "Donate" button.',
+      "Your donation goes directly towards funding critical resources and aid programs for underprivileged individuals. We ensure transparency in our operations, and you can track the impact of your contribution through regular updates on our website.",
   },
   {
-    question: "How can I make a donation?",
+    question: "Can I choose where my donation goes?",
     answer:
-      'You can make a donation by visiting our website and clicking on the "Donate" button.',
+      "Yes, you have the option to specify a particular cause or program you'd like your donation to support. We provide a range of humanitarian projects, and you can select the one that resonates most with you during the donation process.",
   },
   {
-    question: "How can I make a donation?",
+    question: "Is my donation tax-deductible?",
     answer:
-      'You can make a donation by visiting our website and clicking on the "Donate" button.',
+      "Yes, DonateFund is a registered non-profit organization, and donations are generally tax-deductible. Please consult with your tax advisor for specific details based on your location and tax regulations.",
   },
   {
-    question: "How can I make a donation?",
+    question: "How can I stay updated on DonateFund's activities?",
     answer:
-      'You can make a donation by visiting our website and clicking on the "Donate" button.',
+      "You can stay informed about DonateFund's activities, impact stories, and upcoming projects by subscribing to our newsletter. Follow us on our media platforms for real-time updates and stories of positive change.",
   },
-  // Add more FAQ items as needed
+  {
+    question: "Can I volunteer with DonateFund?",
+    answer:
+      "Yes, we welcome volunteers who are passionate about making a difference. Visit our 'Get Involved' section to learn more about volunteer opportunities and how you can contribute your time and skills.",
+  },
+  {
+    question: "How does DonateFund ensure the security of online donations?",
+    answer:
+      "We prioritize the security of your online donations. Our website employs industry-standard encryption to protect your personal and financial information. You can trust that your transaction is secure and confidential.",
+  },
+  {
+    question: "What types of aid and services does DonateFund provide?",
+    answer:
+      "DonateFund provides a wide range of aid and services, including but not limited to emergency relief, healthcare support, education initiatives, and sustainable development projects. Visit our 'Projects' page to explore the diverse areas where we make a positive impact.",
+  },
+  {
+    question: "How can I contact DonateFund for further assistance?",
+    answer:
+      "For any inquiries or assistance, you can reach out to our support team through the 'Contact Us' page on our website. We value your feedback and are here to address any questions you may have.",
+  },
 ];
+
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -55,9 +75,7 @@ const Faq = () => {
           </div>
           <div className="w-full md:w-[49%] flex flex-col justify-center">
             <p className="text-main-ash mb-3">
-              Open Data is the idea that some data should be freely available
-              for everyone to use and republish as they see fit, without
-              restrictions from copyright, patents, or other control mechanisms.
+            We aim to provide you with comprehensive information about our mission, operations, and how you can contribute to creating a positive impact on the lives of those in need. Whether you're considering making a donation, volunteering your time, or just want to learn more about our initiatives, you'll find answers to common queries below.
             </p>
             <a href="text-main-black">Read More</a>
             <h4 className="text-[18px] md:text-[23px] mb-10 text-main-black font-bold mt-10">
