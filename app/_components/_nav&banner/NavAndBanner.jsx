@@ -1,10 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Container from "../_container/Container";
-import { FaBars, FaPhone } from "react-icons/fa";
+import { FaBars, FaPhone, FaRegistered } from "react-icons/fa";
 import { VscGraph } from "react-icons/vsc";
 import { FaRegPlayCircle } from "react-icons/fa";
 import Link from "next/link";
+import { CiLogin } from "react-icons/ci";
 const NavAndBanner = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const demoArray = [
@@ -63,14 +64,14 @@ const NavAndBanner = () => {
               <div className="flex items-center gap-x-5">
                 <div className="hidden md:flex items-center mr-4 text-main-green">
                   {/* Your phone number component goes here */}
-                  <VscGraph className="mr-2 text-main-green" />
-                  <span className="text-main-green">123-456-7890</span>
+                  <CiLogin className="mr-2 text-main-green" />
+                  <span className="text-main-green">Login</span>
                 </div>
                 <div className="hidden md:flex items-center mr-4 group">
                   {/* Your phone number component goes here */}
-                  <FaPhone className="text-white mr-2 duration-300 group-hover:text-main-green" />
+                  <FaRegistered className="text-white mr-2 duration-300 group-hover:text-main-green" />
                   <span className="text-white duration-300 group-hover:text-main-green">
-                    123-456-7890
+                    Signup
                   </span>
                 </div>
 
@@ -96,10 +97,10 @@ const NavAndBanner = () => {
               </p>
               <div className="flex gap-x-4 mt-7">
                 <div className="px-[15px] md:px-[25px]  py-[10px] md:py-[15px] rounded-[40px] border border-white bg-main-green text-white  text-[13px] md:text-[16px]">
-                  Donate now
+                Login
                 </div>
                 <div className="px-[15px] md:px-[25px]  py-[10px] md:py-[15px] rounded-[40px] border border-white  text-white flex items-center gap-x-3 text-[13px] md:text-[16px]">
-                  <FaRegPlayCircle /> Donate now
+                  {/* <FaRegPlayCircle /> Donate now */}Signup
                 </div>
               </div>
             </div>
