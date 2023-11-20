@@ -1,21 +1,21 @@
 "use client";
 import React, { useState } from "react";
-import Container from "../_container/Container";
+
 import { FaBars, FaPhone, FaRegistered } from "react-icons/fa";
 import { VscGraph } from "react-icons/vsc";
 import { FaRegPlayCircle } from "react-icons/fa";
 import Link from "next/link";
 import { CiLogin } from "react-icons/ci";
+import Container from "../_container/Container";
 const NavAndBanner = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const demoArray = [
     { name: "Home", path: "/" },
-    {name:"About",path:"/pages/about"},
+    { name: "About", path: "/#about" },
     { name: "Charity", path: "/pages/charity" },
-    { name: "Disaster", path: "/pages/disaster" },
-    { name: "Events", path: "/pages/events" },
+    { name: "Faq", path: "/#faq" },
+    { name: "Events", path: "/#open" },
     { name: "Contact", path: "/pages/contact" },
-
   ];
 
   const toggleNav = () => {
@@ -65,14 +65,18 @@ const NavAndBanner = () => {
                 <div className="hidden md:flex items-center mr-4 text-main-green">
                   {/* Your phone number component goes here */}
                   <CiLogin className="mr-2 text-main-green" />
-                  <span className="text-main-green">Login</span>
+                  <a href="https://my.donatefund.club/login">
+                    <span className="text-main-green">Login</span>
+                  </a>
                 </div>
                 <div className="hidden md:flex items-center mr-4 group">
                   {/* Your phone number component goes here */}
                   <FaRegistered className="text-white mr-2 duration-300 group-hover:text-main-green" />
-                  <span className="text-white duration-300 group-hover:text-main-green">
-                    Signup
-                  </span>
+                  <a href="https://my.donatefund.club/register">
+                    <span className="text-white duration-300 group-hover:text-main-green">
+                      Signup
+                    </span>
+                  </a>
                 </div>
 
                 {/* Toggle icon for mobile */}
@@ -90,17 +94,26 @@ const NavAndBanner = () => {
             <div className="absolute left-[50%] top-[50%] translate-x-[-50%] flex  flex-col items-center justify-center translate-y-[-50%] w-full">
               <h1 className=" text-[35px] md:text-[60px]  font-bold text-white text-center w-full md:w-[70%] ">
                 {" "}
-                <span className="text-main-green">Empowering Lives, One Donation at a Time</span>
+                <span className="text-main-green">
+                  Empowering Lives, One Donation at a Time
+                </span>
               </h1>
               <p className="text-center w-[75%]  text-white">
-              DonateFund's Commitment to Humanitarian Support and Critical Aid for a Positive Global Impact
+                DonateFund's Commitment to Humanitarian Support and Critical Aid
+                for a Positive Global Impact
               </p>
               <div className="flex gap-x-4 mt-7">
                 <div className="px-[15px] md:px-[25px]  py-[10px] md:py-[15px] rounded-[40px] border border-white bg-main-green text-white  text-[13px] md:text-[16px]">
-                Login
+                <a href="https://my.donatefund.club/login">
+
+                  Login
+                </a>
                 </div>
                 <div className="px-[15px] md:px-[25px]  py-[10px] md:py-[15px] rounded-[40px] border border-white  text-white flex items-center gap-x-3 text-[13px] md:text-[16px]">
-                  {/* <FaRegPlayCircle /> Donate now */}Signup
+                  <a href="https://my.donatefund.club/register">
+                  {/* <FaRegPlayCircle /> Donate now */}Signup 
+
+                  </a>
                 </div>
               </div>
             </div>

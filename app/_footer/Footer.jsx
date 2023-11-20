@@ -15,9 +15,12 @@ const Footer = () => {
               alt="Logo"
             />
             <div>
-              <p className="font-semibold text-lg">Your Donation Site</p>
-              <p>123 Donation Street, City</p>
-              <p>Email: info@donationsite.com</p>
+              <p className="font-semibold text-lg">Donate Fund</p>
+              <p>
+             <p> (716) 486-3801</p>
+<p>Frewsburg, New York, USA</p>
+<p>info@donatefund.club</p>
+              </p>
             </div>
           </div>
 
@@ -48,6 +51,10 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+        </div>
+        <div className="border-t text-center text-white pt-5  mt-10">
+          <a href="/">Copyright &#169; 2023. All rights reserved. <span className="text-main-green">Donate Fund</span>  </a>
+
         </div>
       </Container>
     </div>

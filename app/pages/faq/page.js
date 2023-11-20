@@ -1,8 +1,10 @@
 "use client"
 import React,{useState} from "react";
-import Container from "../_components/_container/Container";
-import HeadingSubheading from "../_components/_headingSubHeading/HeadingSubheading";
+
+
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
+import Container from "@/app/_components/_container/Container";
+import HeadingSubheading from "@/app/_components/_headingSubHeading/HeadingSubheading";
 const faqData = [
   {
     question: "What is DonateFund?",
@@ -63,7 +65,7 @@ const Faq = () => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
   return (
-    <div className="py-[50px] md:py-[80px] " id="faq">
+    <div className="py-[50px] md:py-[80px]">
       <Container>
         <HeadingSubheading
           sebHeading="MODERN CROWDFUNDING PLATFORM"

@@ -1,8 +1,9 @@
+import OpenDonationTab from '@/app/_components/_openDonationTabs/OpenDonationTab'
 import React from 'react'
 
 const Events = () => {
   return (
-    <div>Events</div>
+    <div id='open' ><OpenDonationTab/></div>
   )
 }
 
