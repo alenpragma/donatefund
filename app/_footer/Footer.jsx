@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../_components/_container/Container";
  // Assuming you have a Container component
-
+ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="py-[50px] md:py-[80px] bg-main-black text-white">
@@ -52,6 +52,32 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="flex gap-x-4 py-5 justify-center mt-10">
+      <div className="flex items-center text-white duration-300 hover:text-main-green">
+        <FaFacebook size={25} />
+        <span className="ml-2">Facebook</span>
+      </div>
+
+      <div className="flex items-center text-white duration-300 hover:text-main-green">
+        <FaTwitter size={25} />
+        <span className="ml-2">Twitter</span>
+      </div>
+
+      <div className="flex items-center text-white duration-300 hover:text-main-green">
+        <FaInstagram size={25} />
+        <span className="ml-2">Instagram</span>
+      </div>
+
+      <div className="flex items-center text-white duration-300 hover:text-main-green">
+        <FaLinkedin size={25} />
+        <span className="ml-2">LinkedIn</span>
+      </div>
+
+      <div className="flex items-center text-white duration-300 hover:text-main-green">
+        <FaGithub size={25} />
+        <span className="ml-2">GitHub</span>
+      </div>
+    </div>
         <div className="border-t text-center text-white pt-5  mt-10">
           <a href="/">Copyright &#169; 2023. All rights reserved. <span className="text-main-green">Donate Fund</span>  </a>
 
