@@ -106,7 +106,7 @@ const OpenDonationTab = () => {
   }
 
   return (
-    <div className="py-[50px] md:py-[80px]">
+    <div className="py-[50px] md:py-[80px]" id='open'>
       <Container>
         <h3 className="font-bold text-main-black text-[25px] md:text-[40px] text-center">
           Open <span className="text-main-green mb-10">Donation</span>
