@@ -18,10 +18,10 @@ const About = () => {
           </div>
           <div className="w-full md:w-[49%] flex flex-col justify-center">
             <h4 className="text-[18px] md:text-[23px] mb-10 text-main-black font-bold mt-10">
-              Learn About Us
+            Our Humanitarian Response
             </h4>
             <p className="text-main-ash mb-3">
-            We aim to provide you with comprehensive information about our mission, operations, and how you can contribute to creating a positive impact on the lives of those in need. Whether you're considering making a donation, volunteering your time, or just want to learn more about our initiatives, you'll find answers to common queries below.
+            Dive into the core of our mission, unraveling the intricacies of our operations and discovering meaningful ways to contribute to transformative impacts. Whether you're contemplating a donation, exploring volunteer opportunities, or seeking insights into our diverse initiatives, our platform serves as a comprehensive guide. Transparency is paramount, offering you a clear understanding of how your involvement can make a positive difference in the lives of those facing challenges. From addressing disasters to fostering education and healthcare, your engagement is a catalyst for change. Join us in this collaborative journey, where collective efforts shape a world of compassion, resilience, and enduring change.
             </p>
             <a href="text-main-black">Read More</a>
             

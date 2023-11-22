@@ -4,7 +4,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <>
+    <div>
       <Container>
         <div className="flex justify-center text-center mt-10 w-full">
           <HeadingSubheading
@@ -74,7 +74,7 @@ const Contact = () => {
           </form>
         </div>
       </Container>
-    </>
+    </div>
   );
 };
 

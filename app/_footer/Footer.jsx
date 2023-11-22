@@ -8,6 +8,7 @@ import {
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
+import Link from "next/link" 
 const Footer = () => {
   return (
     <div className="py-[50px] md:py-[80px] bg-main-black text-white">
@@ -31,52 +32,73 @@ const Footer = () => {
           </div>
 
           {/* Right Section - Three Columns */}
-          <div className="flex flex-col md:flex-row md:space-x-8">
-            <div>
-              <p className="font-semibold mb-2">About Us</p>
-              <ul>
-                <li>About Our Cause</li>
-                <li>Our Team</li>
-                <li>Impact</li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold mb-2">Get Involved</p>
-              <ul>
-                <li>Donate</li>
-                <li>Volunteer</li>
-                <li>Events</li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold mb-2">Contact</p>
-              <ul>
-                <li>Contact Us</li>
-                <li>Support</li>
-                <li>FAQ</li>
-              </ul>
-            </div>
-          </div>
+          <div className="flex flex-col md:flex-row gap-y-10 md:space-x-8">
+  <div>
+    <p className="font-semibold mb-2">About Us</p>
+    <ul>
+      <li>
+        <a href="#">About Our Cause</a>
+      </li>
+      <li>
+        <a href="#">Our Team</a>
+      </li>
+      <li>
+        <a href="#">Impact</a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <p className="font-semibold mb-2">Get Involved</p>
+    <ul>
+      <li>
+        <a href="#">Donate</a>
+      </li>
+      <li>
+        <a href="#">Volunteer</a>
+      </li>
+      <li>
+        <a href="#">Events</a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <p className="font-semibold mb-2">Contact</p>
+    <ul>
+      <li>
+        <Link href="/pages/contact">Contact Us</Link>
+      </li>
+      <li>
+        <a href="#">Support</a>
+      </li>
+      <li>
+        <a href="/pages/faq">FAQ</a>
+      </li>
+    </ul>
+  </div>
+</div>
         </div>
         <div className="flex gap-x-4 py-5 items-center mt-10">
           Follow Us -
           <div className="flex items-center text-white duration-300 hover:text-main-green">
-            <a href="www.facebook.com">
+            <a href="https://www.facebook.com">
               <FaFacebook size={25} />
             </a>
           </div>
           <div className="flex items-center text-white duration-300 hover:text-main-green">
-            <a href="www.twitter.com">
+            <a href="https://www.twitter.com">
               <FaTwitter size={25} />
             </a>
           </div>
           <div className="flex items-center text-white duration-300 hover:text-main-green">
-            <a href="www.instagram.com">
+            <a href="https://www.instagram.com">
               <FaInstagram size={25} />
             </a>
           </div>
           <div className="flex items-center text-white duration-300 hover:text-main-green">
+            <a href="https://www.linkedin.com">
+
             <FaLinkedin size={25} />
+            </a>
           </div>
         </div>
         <div className="border-t text-center text-white pt-5  mt-10">
