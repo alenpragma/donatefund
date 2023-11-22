@@ -1,9 +1,10 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import { FaBars, FaPhone, FaRegistered } from "react-icons/fa";
 import { CiLogin } from "react-icons/ci";
 import Container from "../_container/Container";
 import Link from "next/link";
+// import d from "../../../public/d.pdf";
 
 const NavAndBanner = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -37,7 +38,8 @@ const NavAndBanner = () => {
     <>
       <div
         style={{
-          backgroundImage: 'url("https://i.postimg.cc/6pXqg4Lj/gift-habeshaw-xmo-EGNKNj2o-unsplash-1.png")',
+          backgroundImage:
+            'url("https://i.postimg.cc/6pXqg4Lj/gift-habeshaw-xmo-EGNKNj2o-unsplash-1.png")',
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -68,16 +70,16 @@ const NavAndBanner = () => {
                 </div>
               </div>
               <div className="hidden md:flex flex-row items-center mx-auto  gap-x-5 justify-center">
-              {demoArray.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.path}
-                  className="text-white mr-4 duration-300 hover:text-main-green"
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+                {demoArray.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.path}
+                    className="text-white mr-4 duration-300 hover:text-main-green"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
 
               {/* Right side */}
               <div className="flex items-center gap-x-5">
@@ -115,7 +117,6 @@ const NavAndBanner = () => {
             )}
 
             {/* Navbar for larger screens */}
-         
 
             {/* navbar end */}
             {/* banner content start */}
@@ -132,15 +133,13 @@ const NavAndBanner = () => {
               </p>
               <div className="flex gap-x-4 mt-7">
                 <div className="px-[15px] md:px-[25px]  py-[10px] md:py-[15px] rounded-[40px] border border-white bg-main-green text-white  text-[13px] md:text-[16px]">
-                  <a href="https://my.donatefund.club/login">
-                    Login
-                  </a>
+                  <a href="https://my.donatefund.club/login">Login</a>
                 </div>
+                  <Link href="https://docdro.id/yHWjFnG" target="_blank" >
                 <div className="px-[15px] md:px-[25px]  py-[10px] md:py-[15px] rounded-[40px] border border-white  text-white flex items-center gap-x-3 text-[13px] md:text-[16px]">
-                  <a href="https://my.donatefund.club/register">
-                    Signup
-                  </a>
+                    Whitepaper
                 </div>
+                  </Link>
               </div>
             </div>
           </Container>
