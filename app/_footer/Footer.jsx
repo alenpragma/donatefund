@@ -57,7 +57,7 @@ const Footer = () => {
         <a href="#">Volunteer</a>
       </li>
       <li>
-        <a href="#">Events</a>
+        <a href="#open">Events</a>
       </li>
     </ul>
   </div>
@@ -71,7 +71,7 @@ const Footer = () => {
         <a href="#">Support</a>
       </li>
       <li>
-        <a href="/pages/faq">FAQ</a>
+        <a href="#faq">FAQ</a>
       </li>
     </ul>
   </div>
