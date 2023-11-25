@@ -14,6 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="!bg-[#EFF2F2]">
+      <head>
+        <link rel="icon" href="https://i.postimg.cc/053Gjw5p/16x16.png" />
+      </head>
+      <title>Donatefund | Transforming Lives, One Act</title>
       <body className={dmsans.className}>
         <NavAndBanner />
 

@@ -67,7 +67,7 @@ const Faq = () => {
       <Container>
         <HeadingSubheading
           sebHeading="MODERN CROWDFUNDING PLATFORM"
-          heading={"Distribute aid easily, quickly, and transparently."}
+          heading={"Empower Tomorrow Join Us in Shaping a Brighter Future"}
         />
         <div className="mt-10 flex flex-col gap-y-3 md:flex-row md:gap-x-3">
           <div className="w-full md:w-[49%]">
